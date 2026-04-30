@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fitness Gym</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Fitness Zone </h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#trainers">Trainers</a>
+        <a href="#plans">Plans</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Build Your Dream Body</h2>
+    <p>Join the best gym in your city</p>
+    <button onclick="joinNow()">Join Now</button>
+</section>
+
+<section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Modern equipment, expert trainers and best environment.</p>
+</section>
+
+<!-- TRAINERS -->
+<section id="trainers" class="trainers">
+    <h2>Know Your Trainers</h2>
+
+    <div class="trainer-container">
+        <div class="trainer-card">
+            <img src="images/yogeshpatel.png">
+            <h3>Yogesh patel </h3>
+            <p>5+ years experience</p>
+            <p>Weight Loss Expert</p>
+        </div>
+
+        <div class="trainer-card">
+            <img src="https://via.placeholder.com/250">
+            <h3>Amit Verma</h3>
+            <p>Certified Trainer</p>
+            <p>Muscle Gain Specialist</p>
+        </div>
+    </div>
+</section>
+
+<!-- PLANS -->
+<section id="plans" class="plans">
+    <h2>Membership Plans</h2>
+
+    <div class="card-container">
+        <div class="card">
+            <h3>Basic</h3>
+            <p>₹500/month</p>
+            <button onclick="selectPlan('Basic')">Select</button>
+        </div>
+
+        <div class="card">
+            <h3>Pro</h3>
+            <p>₹1000/month</p>
+            <button onclick="selectPlan('Pro')">Select</button>
+        </div>
+
+        <div class="card">
+            <h3>Premium</h3>
+            <p>₹1500/month</p>
+            <button onclick="selectPlan('Premium')">Select</button>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2>Join Now</h2>
+    <input type="text" placeholder="Your Name" id="name">
+    <button onclick="submitForm()">Send on WhatsApp</button>
+    <iframe 
+    src="https://www.google.com/maps?q=YOUR_GYM_LOCATION&output=embed"
+    width="100%" 
+    height="300" 
+    style="border:0;">
+</iframe>
+</section>
+
+<!-- WHATSAPP BUTTON -->
+<div class="whatsapp" onclick="openWhatsApp()">💬</div>
+
+<footer>
+    <p>© 2026 My Gym</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
